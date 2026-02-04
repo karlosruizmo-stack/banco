@@ -47,22 +47,20 @@ class Cuenta {
     }
 
     public void mostrarInfo() {
-        System.out.println("\n================================");
+
         System.out.println("      ESTADO DE LA CUENTA       ");
-        System.out.println("================================");
         System.out.println(titular.toString());
         System.out.printf("Saldo disponible: $%.2f\n", saldo);
-        System.out.println("================================\n");
     }
 }
 
-//  CLASE PRINCIPAL CON MENÚ INTERACTIVO ---
+//  menu principal
 public class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
         // 1. Registro Usuario
-        System.out.println("--- Registro de Nuevo Cliente ---");
+        System.out.println(" Registro de Nuevo Cliente ");
         System.out.print("Nombre completo: ");
         String nombre = teclado.nextLine();
         System.out.print("DNI: ");
