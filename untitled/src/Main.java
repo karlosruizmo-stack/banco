@@ -17,7 +17,7 @@ class Usuario {
     }
 }
 
-// CLASE CUENTA ---
+// CLASE CUENTA
 class Cuenta {
     private Usuario titular;
     private double saldo;
