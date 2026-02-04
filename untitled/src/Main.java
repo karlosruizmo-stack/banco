@@ -40,7 +40,7 @@ class Cuenta {
     public void retirar(double cantidad) {
         if (cantidad > 0) {
             this.saldo -= cantidad;
-            System.out.println(">>> Retirada completada: -$" + cantidad);
+            System.out.println(">>> Retirada completada: " + cantidad);
         } else {
             System.out.println(">>> Error: Cantidad no válida.");
         }
@@ -48,7 +48,7 @@ class Cuenta {
 
     public void mostrarInfo() {
 
-        System.out.println("      ESTADO DE LA CUENTA       ");
+        System.out.println("ESTADO DE LA CUENTA   ");
         System.out.println(titular.toString());
         System.out.printf("Saldo disponible: $%.2f\n", saldo);
     }
